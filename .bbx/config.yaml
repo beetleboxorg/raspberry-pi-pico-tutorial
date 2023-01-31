@@ -4,7 +4,7 @@ runners:
   
 jobs:   
  build_run_sim:
-  resource_spec: small 
+  resource_spec: micro 
   runner: local-runner
   steps:
    - run:
