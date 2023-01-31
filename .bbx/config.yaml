@@ -10,8 +10,8 @@ jobs:
    - run:
       name: Setup Environment
       command: |
-       sudo apt install python3-pip
-       sudo pip3 install rshell
+       apt install python3-pip
+       pip3 install rshell
 workflows:
  complete-build-test:
   jobs:
