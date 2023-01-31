@@ -1,0 +1,18 @@
+runners:
+ local-runner:
+  image: work1-virtualbox:5000/ubuntu-generic
+  
+jobs:   
+ build_run_sim:
+  resource_spec: small 
+  runner: local-runner
+  steps:
+   - run:
+      name: Setup Environment
+      command: |
+       sudo apt install python3-pip
+       sudo pip3 install rshell
+workflows:
+ complete-build-test:
+  jobs:
+   - build_run_sim
