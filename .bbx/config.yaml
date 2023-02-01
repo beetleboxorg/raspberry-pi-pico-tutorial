@@ -13,7 +13,7 @@ jobs:
        apt-get -y update
        apt-get -y install python3-pip
        pip3 install rshell
-       apt install minicom
+       apt-get -y install minicom
    - run:
       name: Connect to Pico
       command: |
