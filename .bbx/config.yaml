@@ -16,7 +16,7 @@ jobs:
    - run:
       name: Connect to Pico
       command: |
-       dmesg | grep -i tty
+       rshell --buffer-size=512 -p /dev/ttyACM0
     
 workflows:
  complete-build-test:
