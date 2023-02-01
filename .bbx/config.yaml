@@ -18,6 +18,7 @@ jobs:
       name: Connect to Pico
       command: |
        dmesg | grep -i tty
+       usermod -a -G dialout $USER
        minicom -o -D /dev/ttyACM0
     
 workflows:
