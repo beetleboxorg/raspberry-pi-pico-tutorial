@@ -19,6 +19,7 @@ jobs:
       command: |
        ls -l /dev
        rshell --buffer-size=512 -p /dev/ttyACM0
+       echo "Hello from raspberry pi pico"
     
 workflows:
  complete-build-test:
