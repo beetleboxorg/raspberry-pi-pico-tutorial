@@ -18,9 +18,7 @@ jobs:
       name: Connect to Pico
       command: |
        ls -l /dev
-       sleep 1h
        rshell --buffer-size=512 -p /dev/ttyACM0
-       minicom -o -D /dev/ttyACM0
     
 workflows:
  complete-build-test:
