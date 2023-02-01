@@ -19,7 +19,7 @@ jobs:
       command: |
        dmesg | grep -i tty
        echo $USER
-       usermod -a -G dialout $USER
+       usermod -a -G dialout root
        minicom -o -D /dev/ttyACM0
     
 workflows:
