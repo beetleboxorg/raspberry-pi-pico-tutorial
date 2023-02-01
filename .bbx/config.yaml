@@ -17,7 +17,6 @@ jobs:
    - run:
       name: Connect to Pico
       command: |
-       dmesg | grep -i tty
        ls -l /dev
        minicom -o -D /dev/ttyACM0
     
