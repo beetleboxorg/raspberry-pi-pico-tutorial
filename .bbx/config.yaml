@@ -20,6 +20,7 @@ jobs:
       command: |
        rshell --buffer-size=512 -p /dev/ttyACM0 cp somefile.py /flash
        rshell --buffer-size=512 -p /dev/ttyACM0 shell ls
+       rshell --buffer-size=512 -p /dev/ttyACM0 shell python somefile.py
     
 workflows:
  complete-build-test:
