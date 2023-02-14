@@ -6,7 +6,7 @@ jobs:
  build_run_sim:
   resource_spec: micro 
   runner: local-runner
-  privileged: True
+  privileged: False
   steps:
    - run:
       name: Setup Environment
