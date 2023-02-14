@@ -18,8 +18,7 @@ jobs:
    - run:
       name: Connect to Pico
       command: |
-       rshell --buffer-size=512 -p /dev/ttyACM0
-       echo "Hello from raspberry pi pico"
+       rshell --buffer-size=512 -p /dev/ttyACM0 echo "Hello from raspberry pi pico"
     
 workflows:
  complete-build-test:
