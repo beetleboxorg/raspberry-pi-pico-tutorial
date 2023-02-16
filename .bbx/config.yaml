@@ -19,6 +19,8 @@ jobs:
    - run:
       name: Connect to Pico
       command: |
+       export LC_ALL=C.UTF-8
+       export LANG=C.UTF-8
        ampy --port /dev/ttyACM0 run somefile.py
     
 workflows:
