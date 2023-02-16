@@ -21,7 +21,8 @@ jobs:
       command: |
        export LC_ALL=C.UTF-8
        export LANG=C.UTF-8
-       ampy --port /dev/ttyACM0 run somefile.py
+       export AMPY_PORT=/dev/ttyACM0
+       ampy ls
     
 workflows:
  complete-build-test:
