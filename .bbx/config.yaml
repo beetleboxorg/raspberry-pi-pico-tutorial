@@ -24,5 +24,7 @@ jobs:
     
 workflows:
  complete-build-test:
+  triggers:
+   - push
   jobs:
    - build_run_sim
